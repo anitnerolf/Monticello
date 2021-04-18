@@ -1,1 +1,179 @@
-//silence-is-golden
+.main-header {
+    // background-image: url('../../assets/header-image.png');
+    position: relative;
+    width: 100%;
+    height: 800px;
+
+    // &__title {
+    //     @include style-header-title;
+    //     margin-bottom: 11px;
+    // }
+
+    // &__subtitle {
+    //     @include style-header-subtitle;
+    //     margin-bottom: 48px;
+    // }
+
+    // .scroll-down {
+    //     padding-top: 107px;
+    //     // font-family: $jsans;
+    //     font-size: 14px;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     letter-spacing: 2.8px;
+    //     line-height: 26px;
+    //     animation: scroll-down-animation 3s infinite;
+    //     &__icon {
+    //         height: 11px;
+    //         display: block;
+    //         margin: auto;
+    //     }
+    //     &__link {
+    //         transition: all .1s ease-in;
+    //         &:hover, &:active {
+    //             transform: translateY(10px);
+    //         }
+    //     }
+    // }
+}
+
+.primary-nav {
+    position: fixed;
+    top: 53px;
+    width: 100%;
+    height: 83px;
+    line-height: 17.6px;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .primary-nav__links{
+        display: flex;
+    }
+    ul {
+        display: flex;
+        li {
+            cursor: pointer;
+            font-family: $sspro;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #ffffff;
+            svg {
+                margin-right: 0.875em;
+            }
+            &:hover {
+                    svg {
+                        fill: #CCCCCC;
+                        path, circle {
+                        stroke: #CCCCCC;
+                        }
+                    }
+                color: #CCCCCC;
+            }
+            margin-right: 70px;
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+        .active {
+            svg {
+                fill: white;
+            }
+        }
+    }
+    .social {
+        a {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+.header-slider {
+    .slides {
+        text-align: center;
+        .slide2, .slide3, .slide4, .slide5 {
+            display: none;
+        }
+        .slide-one, .slide2, .slide3, .slide4, .slide5 {
+            height: 800px;
+            h2 {
+                padding-top: 330px;
+                font-family: $montserrat;
+                font-weight: 700;
+                line-height: 97.52px;
+                font-size: 80px;
+                margin-bottom: 20px;
+                color: white;
+                letter-spacing: 0.1em;
+            }
+            p {
+                font-family: $montserrat;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21.94px;
+                color: white;
+                letter-spacing: 0.3em;
+                margin-bottom: 240px;
+            }
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+        .slide-one {
+            background-image: url("../../assets/slide-bg.png") , url("../../assets/Background.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .slide2 {
+            background-color: orange;
+            background-image: url("../../assets/slide-bg.png");
+        }
+        .slide3 {
+            background-color: purple;
+            background-image: url("../../assets/slide-bg.png");
+        }
+        .slide4 {
+            background-color: green;
+            background-image: url("../../assets/slide-bg.png");
+        }
+        .slide5 {
+            background-color: blue;
+            background-image: url("../../assets/slide-bg.png");
+        }
+
+    }
+    .slick-dots {
+        // margin: 0;
+        // padding: 0;
+        ul {
+            position: absolute;
+            right: 52px;
+            top: 295px;
+            li {
+                cursor: pointer;
+                margin-bottom: 40px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .active-dot {
+                svg {
+                    fill: white;
+                }
+            }
+            :hover {
+                svg {
+                    fill: #CCCCCC;
+                }
+            }
+
+        }
+    }
+}

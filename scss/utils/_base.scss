@@ -1,1 +1,24 @@
-//silence-is-golden
+body {
+    font-family: $sspro;
+    font-size: $fontSize;
+    color: $textColor;
+  }
+  @mixin fullBlock {
+    width: 100%;
+    float: left;
+  }
+  .block-section {
+    @include fullBlock;
+  }
+  
+  .container {
+    max-width: 1173px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
