@@ -5,7 +5,7 @@ function setActive(mainid, id1, id2, id3, mainDiv)
     let c = document.getElementById(id2);
     let d = document.getElementById(id3);
 
-    let a1 = document.getElementsByClassName(mainDiv);
+    let a1 = document.getElementById(mainDiv);
 
     a.classList.add("active");
     // if (b.classList.contains("active")) {
@@ -17,7 +17,7 @@ function setActive(mainid, id1, id2, id3, mainDiv)
     // if (d.classList.contains("active")) {
         d.classList.remove("active");
     // }
-        a1.scrollIntoView();
+    a1.scrollIntoView();
 
 }
 
